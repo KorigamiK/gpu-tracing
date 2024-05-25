@@ -499,7 +499,7 @@ error:
 
 I like to keep things simple in my code examples and use the `?` operator. Instead of defining
 custom error types and conversions, I use a catch all `Error` type from a library called *anyhow*.
-You'll often see the examples include `anyhow::Result` (an alias for `Result<&#xFEFF, anyhow::Error>`)
+You'll often see the examples include `anyhow::Result` (an alias for `Result<&#xFEFF;, anyhow::Error>`)
 and `anyhow::Context`. The latter is a useful trait for adding an error message while converting to
 an `anyhow::Error`:
 
