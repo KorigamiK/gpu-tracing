@@ -19,7 +19,9 @@ div.indented {
 ** Table of Contents
 ** -----------------------------------------------------------------------------------------------*/
 
-.md .longTOC, .md .mediumTOC, .md .shortTOC {
+.md .longTOC,
+.md .mediumTOC,
+.md .shortTOC {
     font-family: sans-serif;
 }
 
@@ -37,7 +39,9 @@ div.indented {
     border-bottom: solid 4px #777;
 }
 
-.md .longTOC, .md .mediumTOC, .md .shortTOC {
+.md .longTOC,
+.md .mediumTOC,
+.md .shortTOC {
     font-family: sans-serif;
 }
 
@@ -105,7 +109,9 @@ div.indented {
     color: #2356FF;
 }
 
-.hljs-params, .hljs-type, .hljs-literal {
+.hljs-params,
+.hljs-type,
+.hljs-literal {
     color: #a62;
 }
 
@@ -143,13 +149,13 @@ div.indented {
 
 /* Code Line Types */
 
-.md code > .highlight {
+.md code>.highlight {
     background-color: #ccdbc8;
 }
 
-.md code > .delete {
+.md code>.delete {
     text-decoration: line-through;
-    background-color: #;
+    background-color: #fdd;
     color: #a0a0a0;
     background: #e0cfcc;
 }
@@ -171,7 +177,7 @@ div.indented {
 .md img {
     margin-top: 1.0em;
     width: 72ex;
-    //image-rendering: crips-edges;
+    /* image-rendering: crips-edges; */
     image-rendering: pixelated;
 }
 
