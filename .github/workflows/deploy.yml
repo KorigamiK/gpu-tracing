@@ -26,6 +26,7 @@ jobs:
       - name: Generate build
         run: |
           mkdir build
+          cp favicon.ico build/
           cp index.html build/
           cp -r book build/book
           cp -r style build/style
