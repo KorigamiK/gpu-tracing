@@ -24,13 +24,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Generate build
-        run: |
-          mkdir build
-          cp favicon.ico build/
-          cp index.html build/
-          cp -r book build/book
-          cp -r style build/style
-          cp -r images build/images
+        run: ./build.sh
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
