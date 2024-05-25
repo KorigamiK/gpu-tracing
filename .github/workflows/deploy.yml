@@ -3,8 +3,8 @@ name: Deploy Static site
 
 on:
   push:
-    branches: [main]
-
+    branches:
+      - dev
   workflow_dispatch:
 
 permissions:
@@ -18,14 +18,15 @@ concurrency:
 
 jobs:
   web:
-    name: Build and deploy site and docs
+    name: Deploy site
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - name: Generate build
         run: |
-          cp index.html build/index.html
+          mkdir build
+          cp index.html build/
           cp -r book build/book
           cp -r style build/style
           cp -r images build/images
